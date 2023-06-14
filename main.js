@@ -7,6 +7,7 @@ form.addEventListener('submit', addUsers);
 axios.get("https://crudcrud.com/api/b719015445ee4735998344ad9fae424e/appointmentDetails")
     .then(response => {
         details = response.data;
+        //console.log(details)
         displayInfo();
     })
     .catch(err => {
