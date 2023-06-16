@@ -78,5 +78,9 @@ function editUser(userId){
               }
             displayInfo();
         })
+        .catch(err => {
+            //console.log("Something went wrong:", err);
+             document.body.innerHTML="<h4>Something went wrong</h4>"
+        })
     
 }
